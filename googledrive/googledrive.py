@@ -1,4 +1,7 @@
-"""TO-DO: Write a description of what this XBlock is."""
+"""
+An Open edX platform XBlock to display the directory 
+listings of a Google Drive directory.
+"""
 
 import pkg_resources
 
@@ -12,13 +15,9 @@ env = Environment(loader=PackageLoader('googledrive', 'static/html'))
 
 class GoogleDriveXBlock(XBlock):
     """
-    TO-DO: document what your XBlock does.
+    Simple display of the Google Drive directory in grid form
     """
-
-    # Fields are defined on the class.  You can access them in your code as
-    # self.<fieldname>.
-
-    # TO-DO: delete count, and define your own fields.
+    
     drive_title = String(
         default="Drive title", scope=Scope.settings,
         help="Title of the drive",
