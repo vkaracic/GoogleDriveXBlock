@@ -1,0 +1,9 @@
+/* CSS for GoogleDriveXBlock */
+
+.googledrive_block .count {
+    font-weight: bold;
+}
+
+.googledrive_block p {
+    cursor: pointer;
+}
